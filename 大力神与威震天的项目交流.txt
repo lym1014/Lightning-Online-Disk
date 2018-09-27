@@ -1,0 +1,6 @@
+
+
+a = pymysql.connect(host,user,password,charset,database,port)
+    b = a.cursor()
+    b.execute('select username from friend')
+    friend_list = b.fetchall()
